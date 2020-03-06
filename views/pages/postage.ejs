@@ -1,10 +1,10 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% include ../partials/header.ejs %>
     <title>Custom Postage Rate</title>
 </head>
 <body>
+    <% include ../partials/nav.ejs %>
     <h2>The postage rate for your <%= mailType %>  
         that weighs <%= weight %> ounces
         is <%= price %>

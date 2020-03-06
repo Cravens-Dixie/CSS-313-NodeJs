@@ -1,12 +1,11 @@
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <% include ../partials/header.ejs %>
 
         <title>week09 Prove Activity</title>
     </head>
     <body>
+        <% include ../partials/nav.ejs %>
         <h1>Postage Rates</h1>
         <p>Please specify the weight of your item in ounces:</p>
         <form action="/postage" method="GET" id="mathform">
