@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <title>week09 Prove Activity</title>
+    </head>
+    <body>
+        <h1>Postage Rates</h1>
+        <p>Please specify the weight of your item in ounces:</p>
+        <form action="/postage" method="GET" id="mathform">
+            <label for="weight">Weight:</label><br>
+            <input type="text" id="weight" name="weight"><br>      
+            
+            <p>Please select the type of mail from the following options:</p>
+            <select name='mailType'>
+                <option value='Stamped Letter'>Letters (Stamped)</option>
+                <option value='Metered Letter'>Letters (Metered)</option>
+                <option value='Large Envelope'>Large Envelopes (Flats)</option>
+                <option value='Package'>First-Class Package Service--Retail</option>
+            </select>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        
+    </body>
+</html>
+
