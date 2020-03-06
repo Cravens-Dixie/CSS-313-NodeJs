@@ -12,11 +12,10 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
   .get('/postage', (req, res) => {
-      var price;
       const Url = url.parse(req.url, true)
       const mailType = (Url.query.mailType)
       const weight = Number(Url.query.weight)
-      price = calculateRate(mailType, weight)
+      const price = calculateRate(mailType, weight)
       const params = {mailType: mailType,
          weight: weight,
          price: price.toLocaleString("en-US", 
